@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Information Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="logo">
+      <h1>Smart City Portal</h1>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Building Smarter, Sustainable Cities</h2>
+      <p>Explore initiatives, services, and innovations shaping the future of urban living.</p>
+      <a href="https://www.wikipedia.org/" class="btn-primary">Discover More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>About Smart Cities</h2>
+      <p>
+        Smart cities integrate technology, data, and sustainable practices to enhance quality of life,
+        improve public services, and ensure efficient urban development. This portal provides insights
+        into initiatives, governance, transportation, and sustainability efforts across modern cities.
+      </p>
+    </div>
+  </section>
+
+  <!-- Key Areas Section -->
+  <section class="key-areas">
+    <div class="container">
+      <h2>Key Focus Areas</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Initiatives</h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZi0LvKhsynvQBvjRWZ0CWOKggH7jmL_6-rkmgjpt7w&s=10" alt="">
+          <p>Smart grids, IoT systems, and digital governance projects.</p>
+          <a href="initiative.html" class="btn-link">Learn More</a>
+        </article>
+        <article class="card">
+          <h3> Public Services</h3>
+          <img src="https://media.istockphoto.com/id/2159297802/vector/public-service-word-concept-isolated-on-white.jpg?s=612x612&w=0&k=20&c=egaFYNBwm01lYlh5BOriadU7jxRfZ2hSddYs73-q4rM=" alt="">
+          <p>Healthcare, education, sanitation, and citizen engagement platforms.</p>
+          <a href="services.html" class="btn-link">Learn More</a>
+        </article>
+        <article class="card">
+          <h3> Transportation</h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn2e5FdkYWLtxDt2iiKnl-CXsj4WQTzO2un5UTILOJEap1p9sZMam79v0&s=10" alt="">
+          <p>Smart traffic systems, metro networks, and eco-mobility solutions.</p>
+          <a href="transport.html" class="btn-link">Learn More</a>
+        </article>
+        <article class="card">
+          <h3> Sustainability</h3>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI-zYIq029d4INNw4-uTDz4kuPFJeeG4G1_47KjPCP-Ltaxk3tRf8CZrRB&s=10" alt="">
+          <p>Renewable energy, waste management, and green infrastructure projects.</p>
+          <a href="sustainability.html" class="btn-link">Learn More</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p> 2026 Smart City Information Portal | Designed for awareness and learning</p>
+    </div>
+  </footer>
+    
+  <!-- Feedback Form -->
+  <form id="myForm">
+    <label for="name">Name :</label> 
+    <input type="text" name="name" id="name" required>
+    <br><br>
+
+    <label for="email">Email :</label> 
+    <input type="email" name="email" id="email" required>
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Result will be shown here -->
+  <div id="result" style="margin-top:20px; font-weight:bold;"></div>
+
+  <script>
+    const form = document.getElementById("myForm");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // prevent page reload
+
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+
+      let message = "Feedback Submitted Successfully!";
+
+      document.getElementById("result").innerHTML =
+        message + "<br>" +
+        "Name: " + name + "<br>" +
+        "Email: " + email;
+    });
+  </script>
+</body>
+</html>
+
+   
+</body>
+</html>
+
+</body>
+</html>
